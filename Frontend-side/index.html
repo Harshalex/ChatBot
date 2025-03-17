@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
+    rel="stylesheet"
+/>
+</head>
+ <body>
+      
+   <div id="chatbot-toggle">
+      <button><i class="ri-robot-3-fill"></i>
+    </button>
+   </div>
+
+   <div class="chatbot-popup">
+           <div class="chatbot-top">
+              <div class="top-info">
+                <i class="ri-robot-3-fill"></i>
+                <h2>ChatBot</h2>
+              </div>
+              <button id="chatbot-close" class="close-btn"><i class="ri-close-circle-line"></i></button>
+           </div>
+
+           <div class="chatbot-middle">
+
+             <div class="chatbot-menu">
+              <div class="menu-message">
+                <i class="ri-robot-3-fill"></i>
+                <div class="message-text">Hello There <br/> How can i assist you...</div>
+               </div>
+                 <button id="contact" class="option-btn">Contact Us</button>
+                 <button id="asking-ques" class="option-btn">Ask me Anything</button>
+             </div>
+             <div class="contact-form">
+                 <p>Please Share your contact details</p>
+                 <form action="submit" id="input-form" >
+                   <label for="name">Name *</label>
+                   <input id="name" placeholder="Enter Name" type="text">
+  
+                   <label for="email">Email *</label>
+                   <input id="email" placeholder="Enter Email" type="email">
+  
+                   <label for="contact-num">Contact *</label>
+                   <input id="contact-num" placeholder="Enter Contact No." type="text">
+  
+                   <label for="resume">Resume *</label>
+                   <input id="resume" type="file">
+
+                   <button type="submit">Submit</button>
+                 </form>
+                 <button id="go-back" class="option-btn">Go Back to main menu</button>
+             </div>
+             <div class="chatbot-body">
+              <button id="go-back-second" class="option-btn">Go Back to main menu</button>
+                 <div class="bot-message common-message">
+                  <i class="ri-robot-3-fill"></i>
+                  <div class="message-text">Hello There <br/> How can i assist you...</div>
+                 </div>
+             </div>
+           </div>
+            
+
+           <div class="chatbot-bottom">
+              <form class="chatbot-form">
+                <textarea 
+                placeholder="Type Message.." id="" class="input-text" required></textarea>
+                <div class="chat-action">
+                    <button id="send-input" type="submit">
+                        <i class="ri-arrow-up-line"></i>
+                    </button>
+                </div>
+              </form>
+           </div>
+   </div>
+
+
+    
+    <script src="script.js"></script>
+</body>
+</html>
