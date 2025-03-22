@@ -10,6 +10,8 @@ const cors = require('cors');
 
 dotenv.config();
 
+// this is for only for testing
+
 const corsOptions = {
     origin: process.env.ORIGIN, 
     methods: ['GET', 'POST'],
